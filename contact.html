@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aidan Murphy - Contact</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html"><strong>Contact</strong></a></li>
+        <li>
+          <dialog id="modal">
+            <h1>Light/Dark Mode Toggle</h1>
+            <p>Click Close to close modal</p>
+            <form method="dialog">
+              <button>Close</button>
+            </form>
+        </dialog>
+        <button onclick="modal.show()">Light/Dark Mode</button></li>
+      </ul>
+    </nav>
+    <h1>Contact Me</h1>
+  </header>
+
+  <main>
+    <section>
+      <p>If you’d like to get in touch, please fill out the form below. I look forward to hearing from you!</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send a Message</legend>
+
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject"><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" cols="33" placeholder="Write your message here..."></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+
+    
+    </section>
+
+    <custom-layout>
+      <p>This is a placeholder for a semantic custom element layout wrapper.</p>
+    </custom-layout>
+
+    <hello-world></hello-world>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aidan Murphy — Built using semantic HTML only.</p>
+  </footer>
+
+  <script>
+    // Custom element that logs to the console
+    class HelloWorld extends HTMLElement {
+      constructor() {
+        super();
+        console.log("Hello world!");
+      }
+    }
+    customElements.define("hello-world", HelloWorld);
+  </script>
+</body>
+</html>

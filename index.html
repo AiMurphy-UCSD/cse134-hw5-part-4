@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aidan Murphy - Portfolio</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><strong>Home</strong></a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <dialog id="modal">
+            <h1>Light/Dark Mode Toggle</h1>
+            <p>Click Close to close modal</p>
+            <form method="dialog">
+              <button>Close</button>
+            </form>
+        </dialog>
+        <button onclick="modal.show()">Light/Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <article>
+        <h1><b>Aidan Murphy</b></h1>
+        <p>
+          <a href="https://github.com/" target="_blank">GitHub</a> |
+          <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+        </p>
+        
+        <picture>
+          <source srcset="profile.webp" type="image/webp">
+          <img src="profile.jpg" alt="Profile picture of Aidan Murphy">
+        </picture>
+        <p>
+          <i>Based in San Diego, CA</i>
+        </p>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Currently pursuing a degree in <strong>Computer Science</strong>.
+      </p>
+      <p>
+        When I’m not coding, I enjoy lifting weights, playing tennis and video games.
+      </p>
+      <span><em>Currently improving my <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> skills.</em></span>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aidan Murphy. All Rights Reserved.</p>
+    <p>
+      Connect with me:
+      <a href="https://github.com/" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>

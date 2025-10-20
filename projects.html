@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aidan Murphy - Projects</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html"><strong>Projects</strong></a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <dialog id="modal">
+            <h1>Light/Dark Mode Toggle</h1>
+            <p>Click Close to close modal</p>
+            <form method="dialog">
+              <button>Close</button>
+            </form>
+        </dialog>
+        <button onclick="modal.show()">Light/Dark Mode</button></li>
+      </ul>
+    </nav>
+    <h1>Featured Projects</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Gallery</h2>
+
+      <article>
+        <h3>Portfolio Website</h3>
+        <p>This project is the development of my personal portfolio, structured with semantic HTML and accessibility in mind.</p>
+        <picture>
+          <source srcset="project1.webp" type="image/webp">
+          <img src="project1.jpg" alt="Screenshot of Aidan Murphy's Portfolio Project">
+        </picture>
+        <p>Technologies used:</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Accessibility-first design</li>
+        </ul>
+        <progress value="40" max="100">100%</progress>
+      </article>
+
+      <article>
+        <h3>Project 2</h3>
+        <p>Project 2 brief description</p>
+        <ol>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ol>
+        <picture>
+          <source srcset="project2.webp" type="image/webp">
+          <img src="project2.jpg" alt="Screenshot of Aidan Murphy's Task Tracker Project">
+        </picture>
+        <p>Below is an embedded demo preview:</p>
+        <iframe src="https://example.com/demo" title="Task Tracker Demo" width="400" height="200"></iframe>
+        <svg width="100" height="100">
+          <circle cx="50" cy="50" r="40" stroke="black" fill="lightgray" />
+        </svg>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aidan Murphy — All Projects Displayed Are Original Works.</p>
+  </footer>
+</body>
+</html>
