@@ -182,6 +182,7 @@ main {
 #about h2 {
   font-size: clamp(2rem, 10vw, 6rem);
   text-align:center;
+  justify-self: center;
   margin-top: clamp(4rem, 15vw, 15rem);
 }
 
