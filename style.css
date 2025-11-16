@@ -280,6 +280,8 @@ form fieldset {
 
 /* text styling */
 form label {
+  margin-top: 3dvh;
+  margin-bottom: 1dvh;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
@@ -291,6 +293,57 @@ input, textarea {
   background: var(--bg);
   color: var(--text);
   width: 100%;
+  margin-bottom: 2dvh;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+/**/ 
+
+/* Highlight invalid fields */
+input:invalid,
+textarea:invalid {
+  border: 2px solid #d33;
+  background-color: #ffe5e5;
+}
+
+/* Highlight valid fields */
+input:valid,
+textarea:valid {
+  border: 2px solid #3a9f3a;
+  background-color: #e9ffe9;
+}
+
+/* Placeholder styling */
+input:placeholder-shown:invalid,
+textarea:placeholder-shown:invalid {
+  background-color: var(--bg);
+  border: 1px solid var(--text);
+}
+
+/* Required asterisk styling */
+label span {
+  color: #d33;
+  font-weight: bold;
+}
+
+/* Output areas */
+#error-output {
+  color: #d33;
+  font-size: 0.9rem;
+  min-height: 1.2rem;
+}
+
+#info-output {
+  color: #3a9f3a;
+  font-size: 0.9rem;
+  min-height: 1.2rem;
+}
+
+/**/
+
+
+legend{
+  text-align: center;
 }
 
 /* submit button */
