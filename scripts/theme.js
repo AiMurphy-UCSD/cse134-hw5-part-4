@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  document.querySelectorAll('.js-only').forEach(el => el.style.display = 'inline-block');
   const root = document.documentElement;
   const modeBtn = document.getElementById("mode");
 

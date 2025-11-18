@@ -124,6 +124,11 @@ header {
         border-color: #444;                /* Darker border for contrast */
     }
 
+  /* Hide JS-only elements when JS is off */
+.js-only {
+    display: none;
+}
+
 /* ==== MAIN SECTIONS ==== */
 main {
   margin: clamp(.75rem, 2vw, 2rem) clamp(1rem, 4vw, 3rem);
@@ -435,6 +440,16 @@ form button:hover {
       border-radius: 1rem;
       border: none;
     }
+}
+
+#noJS-warning p{
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #ffdddd;
+    color: #300;
+    border: 1px solid #aa0000;
+    border-radius: 4px;
+    font-size: 0.95rem;
 }
 
 
