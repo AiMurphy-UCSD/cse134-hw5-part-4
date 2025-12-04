@@ -482,6 +482,8 @@ form button:hover {
       font-size: clamp(1rem, 2vw, 1.5rem);
       text-align: center;
       font-weight: 300;
+      justify-self: center;
+      max-width: 1000px;
     }
     picture img {
         display:flex;
